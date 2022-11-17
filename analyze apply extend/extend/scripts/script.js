@@ -4,11 +4,12 @@
     Date:11/15/22
 */
 
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $("p").hide();
-  });
-  $("#show").click(function(){
-    $("p").show();
-  });
-});
+function myFunction() {
+  alert("I am an alert box!");
+  var x = document.getElementById("first");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
